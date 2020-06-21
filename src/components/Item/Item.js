@@ -11,14 +11,17 @@ const itemStyle = {
 const Item = (props) => {
   return (
     <div className="item" style={itemStyle}>
-      <div className="tag">IT</div>
-      <div className="title">
-        Название проекта название проекта название длинное
-      </div>
-      <div className="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
-        tincidunt massa, at rhoncus quam. Vestibulum ut tincidunt massa. Nunc
-        eget accumsan magna, et auctor odio.
+      <div className="top">
+        <div className="tag">IT</div>
+        <div className="title">
+          Название проекта название проекта название
+          длиasddddddasdasdasdasdffffffffffffнное
+        </div>
+        <div className="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+          tincidunt massa, at rhoncus quam. Vestibulum ut tincidunt massa. Nunc
+          eget accumsan magna, et auctor odio.
+        </div>
       </div>
       <div className="bottom">
         <div className="more">

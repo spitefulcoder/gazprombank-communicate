@@ -11,7 +11,6 @@ const Ideas = (props) => {
         <Item />
         <Item />
         <Item />
-        <Item />
       </div>
     </div>
   );

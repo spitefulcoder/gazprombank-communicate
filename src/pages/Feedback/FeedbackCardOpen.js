@@ -1,7 +1,7 @@
 import React from "react";
 import "./FeedbackCard.css";
 import { ArrowDownIcon } from "@holism/icons";
-import { COLORS, Textarea } from "@holism/core";
+import { COLORS, Textarea, Button } from "@holism/core";
 
 const FeedbackCardOpen = (props) => {
   return (
@@ -11,9 +11,11 @@ const FeedbackCardOpen = (props) => {
       <div className="drop-arrow">
         <ArrowDownIcon size={20} color={COLORS.black} />
       </div>
-      <div>
-        {" "}
+      <div className="txt">
         <Textarea placeholder="Сопроводительное письмо" />
+        <Button className="btn" dimension="small">
+          Отправить
+        </Button>
       </div>
     </div>
   );

@@ -6,7 +6,9 @@ import "./Header.css";
 const Header = (props) => {
   return (
     <div className="header">
-      <Logo />
+      <a href="/">
+        <Logo />
+      </a>
       <Profile />
     </div>
   );
