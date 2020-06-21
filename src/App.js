@@ -14,7 +14,7 @@ const initialState = {
 const rootReducer = (state = initialState, action) => {
   switch(action.type) {
     case LOGIN:
-      //console.log('user saved ' + JSON.stringify(action.user))
+      localStorage.setItem('user', JSON.stringify(action.user))
       return {
         ...state,
         user: action.user
@@ -36,6 +36,9 @@ function App() {
               <Login />
             </Route>
             <Route exact path="/ideas">
+              <Ideas />
+            </Route>
+            <Route path='/'>
               <Ideas />
             </Route>
           </Switch>

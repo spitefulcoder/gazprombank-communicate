@@ -1,4 +1,4 @@
-.ideas {
+.ideasContainer {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
