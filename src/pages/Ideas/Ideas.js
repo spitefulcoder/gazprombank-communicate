@@ -3,6 +3,7 @@ import "./Ideas.css";
 import Item from "../../components/Item/Item";
 import Filter from "../../components/FilteredSearch/Filter";
 import Header from '../../components/Header/Header'
+import { Button, Input } from "@holism/core";
 import {LOGIN} from '../../actions'
 import {host} from '../../api'
 import {connect} from 'react-redux'
@@ -63,7 +64,7 @@ class Ideas extends Component{
 
   render() {
     return (
-      <div>
+      <div className="ideas">
         {
           this.state.shouldRedirectToLogin === true ? 
             <Redirect to='/login' />
@@ -71,18 +72,23 @@ class Ideas extends Component{
             null
         }
         <Header/>
-        <Filter />
-        <div className="ideasContainer">
-          {
-            this.state.ideaCards.map(cardData => {
-              return <Item title={cardData.title} 
-                description={cardData.description} 
-                likes={cardData.likes} 
-                dislikes={cardData.dislikes}
-                cardID={cardData.id}
-                key={cardData.id}/>
-            })
-          }
+        <div className="contentContainer">
+          <div className="inputs">
+              <Input className="searchInput"/>
+              <Button>Создать идею</Button>
+          </div>
+          <div className="ideasContainer">
+            {
+              this.state.ideaCards.map(cardData => {
+                return <Item title={cardData.title} 
+                  description={cardData.description} 
+                  likes={cardData.likes} 
+                  dislikes={cardData.dislikes}
+                  cardID={cardData.id}
+                  key={cardData.id}/>
+              })
+            }
+          </div>
         </div>
       </div>
     )
