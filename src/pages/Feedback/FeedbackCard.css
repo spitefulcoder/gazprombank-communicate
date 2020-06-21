@@ -1,0 +1,24 @@
+.feedbackcard {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  padding-left: 20px;
+  column-gap: 50px;
+  margin-right: auto;
+  align-items: center;
+  border: 2px solid #0d356c;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 28px;
+}
+.fd-tag {
+  font-size: 20px;
+  background: #f5984e;
+  border-radius: 5px;
+}
+
+.feedbackcard-open {
+}
