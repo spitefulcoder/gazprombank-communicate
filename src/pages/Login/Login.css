@@ -1,7 +1,15 @@
+.Login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media all and (min-width: 480px) {
-  .Login {
+  /*.Login {
     padding: 120px 0;
-  }
+  }*/
 
   .Login form {
     text-align: center;
