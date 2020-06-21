@@ -13,12 +13,10 @@ const Item = (props) => {
     <div className="item" style={itemStyle}>
       <div className="tag">IT</div>
       <div className="title">
-        Название проекта название проекта название длинное
+        {props.title}
       </div>
       <div className="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
-        tincidunt massa, at rhoncus quam. Vestibulum ut tincidunt massa. Nunc
-        eget accumsan magna, et auctor odio.
+        {props.description}
       </div>
       <div className="bottom">
         <div className="more">
@@ -30,11 +28,11 @@ const Item = (props) => {
         <div className="score">
           <div className="like">
             <img src={like} alt="За" />
-            <span>56</span>
+            <span>{props.likes}</span>
           </div>
           <div className="dislike">
             <img src={like} alt="Против" />
-            <span>31</span>
+            <span>{props.dislikes}</span>
           </div>
         </div>
       </div>

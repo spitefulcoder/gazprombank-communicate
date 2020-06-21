@@ -13,9 +13,11 @@ class Ideas extends Component{
   constructor(props) {
     super(props)
     this.state = {
+      userToken: 0,
       shouldRedirectToLogin: false,
       ideaCards: []
     }
+    this.fetchIdeaCardsIntervalKey = 0
   }
 
   async componentWillMount() {
@@ -28,15 +30,34 @@ class Ideas extends Component{
         shouldRedirectToLogin: true
       })
     }
+    this.setState({
+      userToken: user.token
+    })
+  }
 
+  componentDidMount() {
+    this.fetchIdeaCards()
+    this.fetchIdeaCardsIntervalKey = setInterval(() => {this.fetchIdeaCards() }, 10000)
+  }
+
+  async fetchIdeaCards() {
     let responce = await fetch(`${host}/idea/card/`, {
       method: 'GET',
       headers: {
-        'Authorization': `Token ${user.token}`,
+        'Authorization': `Token ${this.state.userToken}`,
         'Content-Type': 'application/json;charset=utf-8'
       }
     })
-
+    let result = await responce.json()
+    let ideaCards = []
+    if (responce.status === 200) {
+      result.data.map(cardData => {
+        ideaCards.push(cardData)
+      })
+      this.setState({
+        ideaCards: ideaCards
+      })
+    }
   }
 
 
@@ -52,10 +73,16 @@ class Ideas extends Component{
         <Header/>
         <Filter />
         <div className="ideasContainer">
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+          {
+            this.state.ideaCards.map(cardData => {
+              return <Item title={cardData.title} 
+                description={cardData.description} 
+                likes={cardData.likes} 
+                dislikes={cardData.dislikes}
+                cardID={cardData.id}
+                key={cardData.id}/>
+            })
+          }
         </div>
       </div>
     )
