@@ -44,6 +44,7 @@ function App() {
           </Switch>
         </BrowserRouter>
       </Provider>
+
     </div>
   );
 }

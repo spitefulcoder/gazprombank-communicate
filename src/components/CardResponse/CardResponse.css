@@ -1,0 +1,119 @@
+
+.modalContainer {
+    background: rgba(196, 196, 196, 0.5);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5000;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.CardResponse {
+    width: 76%;
+    height: 80%;
+    position: fixed;
+    top: 10.09%;
+    right: 11.46%;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.CardResponse .Container {
+    margin-top: 49px;
+    margin-right: 55px;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+
+}
+
+
+.CardResponse .responseTitle {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+}
+
+
+
+.CardResponse .responseText {
+    border: 1px solid #F5984E;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 30px;
+    height: 50%;
+    resize: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 39px;
+
+    color: #000000;
+
+}
+
+.CardResponse .responseTitle span {
+    
+}
+
+.CardResponse .infoText {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+
+    color: #7C8793;
+
+    margin-top: 6px;
+}
+
+.CardResponse .buttonContainer {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.CardResponse .buttonSend {
+    border: 1px solid #F5984E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.CardResponse .closeModalForm {
+    margin-right: -260px;
+    margin-top: -210px;
+    position: relative;
+    
+}
+
+.CardResponse .closeModalForm svg {
+    cursor: pointer;
+}
