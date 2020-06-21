@@ -1,0 +1,118 @@
+.CardFull {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 150px;
+  margin-top: 63px;
+  margin-right: 150px;
+}
+
+.CardFull .cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.CardFull .cardTitle {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+
+  color: #000000;
+  padding-right: 25px;
+  height: 92px;
+}
+
+.CardFull .functionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.CardFull .cardText {
+  width: 100%;
+  border: 1px solid #f5984e;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 22px;
+  text-align: start;
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 39px;
+  /* overflow: ; */
+
+  color: #000000;
+}
+
+/* .CardFull .optionsPannel {
+} */
+
+.CardFull .doResponse {
+  border: 1px solid #f5984e;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.CardFull .optionsPannel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.CardFull .MarkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.CardFull .mark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CardFull .mark span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
