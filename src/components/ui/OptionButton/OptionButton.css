@@ -1,0 +1,26 @@
+
+
+.OptionButton {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 32px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: #000000;
+}
+
+
+.blueButton {
+    border: 1px solid #0D356C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 261px;
+    height: 50px;
+}

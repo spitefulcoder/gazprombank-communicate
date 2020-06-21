@@ -1,0 +1,21 @@
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 120px 0;
+  }
+
+  .Login form {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  .pass {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .btn {
+    border-radius: 5px;
+  }
+  a {
+    text-decoration: none;
+  }
+}

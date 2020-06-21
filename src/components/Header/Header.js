@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "./ui/Logo";
-import Profile from "./ui/Profile";
+import Logo from "../ui/Logo/Logo";
+import Profile from "../ui/Profile/Profile";
 import "./Header.css";
 
 const Header = (props) => {

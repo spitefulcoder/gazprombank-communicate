@@ -1,8 +1,8 @@
 
 import React from 'react';
 import './CardFull.css';
-import FunctionIcon from "../FunctionIcon/FunctionIcon.jsx";
-import CardResponse from "../CardResponse/CardResponse.jsx";
+import FunctionIcon from "../../components/ui/FunctionIcon/FunctionIcon.jsx";
+import CardResponse from "../../components/CardResponse/CardResponse.jsx";
 
 class CardFull extends React.Component {
 

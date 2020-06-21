@@ -1,0 +1,69 @@
+
+.CreateIdea {
+    margin-left: 155px;
+    margin-right: 155px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.CreateIdea .stageHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.CreateIdea .contentContainer {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.CreateIdea .ideaTitle {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.stage1, .stage2, .stage3 {
+    width: 100%;
+}
+
+.CreateIdea .stage1 .ideaInput {
+    height: 80px;
+    width: 100%;
+    border: 2px solid #0D356C;
+    box-sizing: border-box;
+    margin-top: 55px;
+}
+
+.CreateIdea .stage1 .ideaInfo {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color: #000000;
+    width: 100%;
+    margin-top: 94px;
+}
+
+.CreateIdea .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 55px;
+}
