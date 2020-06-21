@@ -1,5 +1,23 @@
-.ideas {
+.ideas .contentContainer {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.ideas .inputs {
+  width: 100%;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ideas .searchInput {
+  width: 360px;
+}
+
+.ideasContainer {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
 }
+

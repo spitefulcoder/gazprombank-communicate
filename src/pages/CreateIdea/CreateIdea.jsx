@@ -27,7 +27,7 @@ class CreateIdea extends React.Component {
   }
 
   stage_forward() {
-    if (this.state.stage == 1) {
+    if (this.state.stage === 1) {
       this.formData.title = document.querySelector(".ideaInfo").value;
       this.setState({
         stage: this.state + 1,
@@ -38,14 +38,14 @@ class CreateIdea extends React.Component {
     }
   }
   stage_back() {
-    if (this.state.stage == 2) {
+    if (this.state.stage === 2) {
       this.setState({
         stage: 1,
         circle1: "active",
         circle2: "sleep",
         circle3: "sleep",
       });
-    } else if (this.state.stage == 3) {
+    } else if (this.state.stage === 3) {
       this.setState({
         stage: 1,
         circle1: "active",
@@ -110,7 +110,7 @@ class CreateIdea extends React.Component {
         </div>
 
         <div className="contentContainer">
-          {this.state.stage == 1 ? (
+          {this.state.stage === 1 ? (
             <div className="stage1">
               <div className="ideaTitle">Заголовок вашей идеи</div>
               <input type="text" className="ideaInput" />
@@ -128,7 +128,7 @@ class CreateIdea extends React.Component {
                 />
               </div>
             </div>
-          ) : this.state.stage == 2 ? (
+          ) : this.state.stage === 2 ? (
             <div className="stage2">
               <div>
                 <div className="ideaTitle">Функции</div>
